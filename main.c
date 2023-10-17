@@ -14,6 +14,7 @@ float divisao(float x, float y){
 }
 main(){
     float x, y, z;
+    float z2;
     char sinal;
     printf("digite o valor de X: ");
     scanf("%f", &x);
@@ -41,4 +42,23 @@ main(){
         break;
     }
     printf("%.1f ",z);
+    switch (sinal)
+    {
+    case '+':
+        z2 = somar(y,x);
+        break;
+    case '-':
+        z2 = subtracao(y,x);
+        break;
+    case '*':
+        z2 = produto(y,x);
+        break;
+    case '/':
+        z2 = divisao(y,x);
+        break;
+    default:
+        printf("valor digitado para sinal, é invalido.");
+        break;
+    }
+    printf("Caso inverta a ordem da operação, a resposta será: %.1f", z2);
 }
