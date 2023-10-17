@@ -9,6 +9,9 @@ float subtracao(float x, float y){
 float produto(float x, float y){
     return x*y;
 }
+float divisao(float x, float y){
+    return x/y;
+}
 main(){
     float x, y, z;
     printf("digite o valor de X: ");
