@@ -1,7 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 float somar(float x, float y){
-    return x + y;
+    return x+y;
+}
+float subtracao(float x, float y){
+    return x-y;
 }
 main(){
     float x, y, z;
